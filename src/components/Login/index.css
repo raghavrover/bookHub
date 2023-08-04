@@ -1,0 +1,188 @@
+.login-page {
+  height: 100vh;
+  width: 100%;
+  padding: 0.8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow-y: auto;
+}
+
+.md-login-page-img-wrapper {
+  display: none;
+  overflow-y: hidden;
+}
+
+.sm-login-img-wrapper {
+  margin: 0 auto;
+}
+
+.sm-login-img {
+  height: 250px;
+  width: 250px;
+}
+
+.md-login-img {
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.login-form-container {
+  width: 90%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-book-hub-logo {
+  height: 50px;
+  width: 250px;
+}
+
+.input-field-container {
+  width: 90%;
+  max-width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.input-label {
+  font-family: 'Roboto';
+  font-size: 0.8em;
+  font-weight: 500;
+  cursor: pointer;
+
+  color: #5a7184;
+}
+
+.user-input {
+  height: 40px;
+  width: 100%;
+  padding: 14px 10px;
+  border: 1px solid #183b56;
+  border-radius: 0.3rem;
+
+  color: #183b56;
+  font-family: 'Roboto';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+  background-color: transparent;
+}
+
+.check-box-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+
+.check-box {
+  height: 14px;
+  width: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.check-box-label {
+  font-family: 'Roboto';
+  font-size: 0.7rem;
+  font-weight: 400;
+  cursor: pointer;
+
+  color: #5a7184;
+}
+
+.error-msg {
+  margin-top: 0;
+  font-family: 'Roboto';
+  font-size: 0.6rem;
+  font-weight: 400;
+
+  color: #ef4444;
+}
+
+.submit-button {
+  height: 45px;
+  width: 90%;
+  max-width: 350px;
+  border: none;
+  border-radius: 0.5rem;
+
+  font-family: 'Roboto';
+  font-size: 1rem;
+  font-weight: 400;
+  outline: none;
+  background-color: #0284c7;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.disabled-btn {
+  background-color: #0284c7;
+  color: #ffffff;
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page {
+    padding: 0;
+
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .md-login-page-img-wrapper {
+    width: 50%;
+    height: 100%;
+
+    display: block;
+  }
+
+  .sm-login-img-wrapper {
+    display: none;
+  }
+
+  .login-form-container {
+    height: 100%;
+    width: 50%;
+
+    background-color: #f8fafc;
+  }
+
+  .login-form {
+    gap: 30px;
+
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+  .login-book-hub-logo {
+    height: 60px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+}

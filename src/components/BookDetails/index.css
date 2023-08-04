@@ -1,0 +1,241 @@
+.book-details-page {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: #f5f7fa;
+}
+
+.book-details-content {
+  width: 90%;
+  max-width: 1140px;
+  min-height: 92vh;
+  padding-top: 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.book-details {
+  width: 100%;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.book-data {
+  width: 100%;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #94a3b8;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.book-details-cover-img {
+  width: 12.6875rem;
+  height: 14.125rem;
+  border-radius: 0.75rem;
+
+  flex-shrink: 0;
+}
+
+.book-details-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.book-details-page-title {
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.8rem;
+  text-align: center;
+
+  color: #334155;
+}
+
+.book-details-page-author {
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+
+  color: #475569;
+}
+
+.book-avg-rating-title {
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+
+  color: #475569;
+}
+
+.book-avg-rating {
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-size: 0.73rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4rem;
+
+  color: #334155;
+}
+
+.about-author-wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.about-author-title {
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+
+  color: #334155;
+}
+
+.about-author-description {
+  margin-top: 0;
+  padding-top: 0;
+
+  font-family: 'Roboto';
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+
+  color: #475569;
+}
+
+.book-page-read-status {
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+
+  color: #475569;
+}
+
+.book-details-read-status {
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+
+  color: #0284c7;
+}
+
+@media screen and (min-width: 768px) {
+  .book-details {
+    border: none;
+    border-radius: 1rem;
+
+    background-color: #ffffff;
+  }
+
+  .book-data {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .book-details-page-wrapper {
+    align-items: flex-start;
+    gap: 0.5;
+  }
+
+  .book-details-cover-img {
+    width: 14.6875rem;
+    height: 17.125rem;
+  }
+
+  .book-details-page-title {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .book-details-page-author {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .book-avg-rating-title {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .book-avg-rating {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+
+  .book-page-read-status {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+
+  .book-details-read-status {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .about-author-wrapper {
+    gap: 0.3rem;
+  }
+
+  .about-author-title {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .about-author-description {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+}

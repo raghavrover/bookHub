@@ -1,0 +1,75 @@
+.not-found-page {
+  min-height: 100vh;
+  padding: 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-img {
+  width: 14.0625rem;
+  height: 9.43756rem;
+}
+
+.not-found-title {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+
+  color: #334155;
+}
+
+.not-found-description {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+
+  color: #475569;
+}
+
+.go-home-btn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  font-family: 'Roboto';
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+
+  color: #ffffff;
+  background-color: #0284c7;
+}
+
+@media screen and (min-width: 768px) {
+  .not-found-img {
+    width: 28rem;
+    height: 18.48325rem;
+  }
+
+  .not-found-title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .not-found-description {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
+  .go-home-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+}

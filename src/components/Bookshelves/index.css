@@ -1,0 +1,528 @@
+.bookshelves-page {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: #f5f7fa;
+}
+
+.bookshelves-page-content {
+  width: 90%;
+  max-width: 1140px;
+  padding-top: 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.sm-search-bar-container {
+  width: 100%;
+}
+
+.md-search-bar-container {
+  display: none;
+}
+
+.search-bar {
+  height: 2rem;
+  width: 100%;
+  border: 1px solid #94a3b8;
+  border-radius: 0.25rem;
+
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 1;
+}
+
+.book-search-input {
+  height: 100%;
+  width: 80%;
+  border: none;
+  margin-right: 0.5rem;
+
+  font-family: 'Roboto';
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+
+  color: #1e293b;
+  background-color: transparent;
+  outline: none;
+  flex: 1;
+}
+
+.search-btn {
+  width: 2.85rem;
+  height: 100%;
+  padding-top: 0.35rem;
+  border: none;
+  border-radius: 0rem 0.1875rem 0.1875rem 0rem;
+
+  background-color: #edeff1;
+  flex-shrink: 0;
+}
+
+.search-icon {
+  height: 1.2rem;
+  width: 1.2rem;
+
+  color: #94a3b8;
+}
+
+.sm-bookshelves-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.sm-bookshelves-title {
+  font-family: 'Roboto';
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+
+  color: #334155;
+}
+
+.sm-bookshelves-list {
+  list-style: none;
+  width: 100%;
+  margin-top: 0;
+  padding-left: 0;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.bookshelf-btn {
+  padding: 0.25rem 0.8rem;
+  border: 1px solid #0284c7;
+  border-radius: 1.5625rem;
+
+  font-family: 'Roboto';
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+
+  color: #0284c7;
+  background-color: transparent;
+}
+
+.selected-btn {
+  color: #ffffff;
+  background-color: #0284c7;
+}
+
+.side-bar {
+  width: 12rem;
+  height: 100%;
+  padding: 1rem;
+
+  display: none;
+  background: #ffffff;
+}
+
+.md-bookshelves-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-shrink: 0;
+  gap: 0.3rem;
+}
+
+.md-bookshelves-title {
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+
+  color: #334155;
+}
+
+.md-bookshelves-list {
+  width: 100%;
+  padding-left: 0;
+  margin-top: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.md-bookshelf-list-item {
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2rem;
+
+  color: #475569;
+}
+
+.active-md-list-item {
+  color: #0284c7;
+}
+
+.books-container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+.books-header-container {
+  width: 100%;
+
+  display: none;
+}
+
+.shelf-books-title {
+  margin-right: 1.6rem;
+
+  font-family: 'Roboto';
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  flex-shrink: 0;
+
+  color: #334155;
+}
+
+.books-list {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.list-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.link-item {
+  text-decoration: none;
+}
+
+.book-cover {
+  width: 7.3125rem;
+  height: 8.6875rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  object-fit: initial;
+}
+
+.book-details-wrapper {
+  padding-top: 0.3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.book-title {
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  text-align: left;
+
+  color: #334155;
+}
+
+.book-author {
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-size: 0.775rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  text-align: left;
+
+  color: #475569;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.avg-rating {
+  margin: 0;
+
+  font-family: Inter;
+  font-size: 0.65rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  text-align: left;
+
+  color: #475569;
+}
+
+.star-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+
+  color: #fbbf24;
+}
+
+.rating {
+  margin: 0;
+
+  font-family: HK Grotesk;
+  font-size: 0.775rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  text-align: left;
+
+  color: #334155;
+}
+
+.book-read-status {
+  margin: 0;
+
+  font-family: Inter;
+  font-size: 0.65rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  text-align: left;
+
+  color: #475569;
+}
+
+.read-status {
+  font-family: Inter;
+  font-size: 0.65rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  text-align: left;
+
+  color: #0284c7;
+}
+
+.footer-container {
+  margin-top: auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.no-book-results-view {
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-results-img {
+  width: 14.0625rem;
+  height: 8rem;
+}
+
+.no-results-description {
+  font-family: 'Roboto';
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+
+  color: #334155;
+}
+
+@media screen and (min-width: 350px) {
+  /* .search-bar {
+    height: 2rem;
+  } */
+
+  .list-item-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .book-cover {
+    width: 8.3125rem;
+    height: 9.6875rem;
+  }
+
+  .book-details-wrapper {
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .book-title {
+    font-size: 1rem;
+  }
+
+  .book-author {
+    font-size: 0.875rem;
+  }
+
+  .avg-rating {
+    font-size: 0.75rem;
+  }
+
+  .rating {
+    font-size: 0.875rem;
+  }
+
+  .book-read-status {
+    font-size: 0.75rem;
+  }
+
+  .read-status {
+    font-size: 0.75rem;
+  }
+  .no-results-img {
+    width: 16.0625rem;
+    height: 11rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bookshelves-page-content {
+    height: 92vh;
+    width: 90%;
+    padding-top: 2rem;
+
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .search-bar {
+    max-width: 400px;
+  }
+
+  .sm-bookshelves-container {
+    display: none;
+  }
+
+  .side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+
+  .books-container {
+    width: 80%;
+    padding-bottom: 2rem;
+    flex: 1;
+  }
+
+  .books-header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .books-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .list-item-wrapper {
+    width: 400px;
+    align-items: flex-start;
+  }
+
+  .book-cover {
+    width: 8.3125rem;
+    height: 9.6875rem;
+  }
+
+  .book-details-wrapper {
+    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  .book-title {
+    font-size: 0.9rem;
+  }
+
+  .book-author {
+    font-size: 0.7rem;
+  }
+
+  .avg-rating {
+    font-size: 0.65rem;
+  }
+
+  .rating {
+    font-size: 0.75rem;
+  }
+
+  .book-read-status {
+    font-size: 0.65rem;
+  }
+
+  .read-status {
+    font-size: 0.65rem;
+  }
+
+  .footer-container {
+    display: none;
+  }
+
+  .no-results-img {
+    width: 23.75rem;
+    height: 14.4375rem;
+  }
+}

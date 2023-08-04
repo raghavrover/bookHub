@@ -1,0 +1,48 @@
+.failure-view-container {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.failure-view-image {
+  width: 50%;
+  max-width: 450px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.failure-msg {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  color: #000000;
+}
+
+.failure-suggestion {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.retry-button {
+  height: 43px;
+  width: 100px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Bree Serif';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4f46e5;
+}

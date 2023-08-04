@@ -1,0 +1,180 @@
+.nav-bar {
+  width: 100%;
+  min-height: 3rem;
+  height: 4rem;
+  max-height: 8vh;
+
+  background-color: #ffffff;
+}
+
+.nav-content {
+  width: 90%;
+  height: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-hub-logo {
+  width: 5.75rem;
+  height: 1.50013rem;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.menu-btn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.over-flow {
+  overflow: hidden;
+}
+
+.side-menu {
+  height: 100%;
+  width: 300px;
+  padding-top: 1rem;
+
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: auto;
+
+  position: fixed;
+  top: 0;
+  left: -300px;
+  z-index: 2;
+  transition: left 400ms ease-in;
+}
+
+.slide {
+  left: 0;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+
+  align-self: flex-end;
+}
+
+.close-icon {
+  height: 2rem;
+  width: 2rem;
+
+  color: #64748b;
+}
+
+.side-menu-list {
+  width: 100%;
+  list-style: none;
+  padding-left: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.side-menu-item {
+  width: 100%;
+}
+
+.side-menu-list-item {
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+
+  color: #64748b;
+}
+
+.side-menu-list-item:hover {
+  color: #0284c7;
+  transform: translateY(-2px);
+}
+
+.nav-item-list {
+  display: none;
+  margin: 0;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.link-item {
+  font-family: 'Roboto';
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  text-decoration: none;
+
+  color: #64748b;
+}
+
+.logout-btn {
+  padding: 0.3rem 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  outline: none;
+  cursor: pointer;
+
+  font-family: 'Roboto';
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+
+  color: #f8fafc;
+  background-color: #0284c7;
+}
+
+@media screen and (min-width: 768px) {
+  .book-hub-logo {
+    width: 7.3125rem;
+    height: 2rem;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .nav-item-list {
+    padding-left: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.2rem;
+  }
+}
