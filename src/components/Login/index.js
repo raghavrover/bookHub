@@ -10,8 +10,8 @@ const loginApiStatus = {
 }
 
 const LoginPage = props => {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
+  const [username, setUsername] = useState('rahul')
+  const [password, setPassword] = useState('rahul@2021')
   const [loginStatus, setLoginStatus] = useState(loginApiStatus.initial)
   const [errorMsg, setErrorMsg] = useState('')
   const [showPassword, setShowPassword] = useState(false)
@@ -110,6 +110,9 @@ const LoginPage = props => {
       >
         Login
       </button>
+      <p className="check-box-label">
+        Login with the pre-filled credentials and explore
+      </p>
     </form>
   )
 
